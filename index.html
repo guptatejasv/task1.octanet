@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <section>
+    <div class="circle"></div>
+
+    
+    <header>
+        <a href="#" > <img src="coolberg_logo.webp" alt="" class="logo"></a>
+        <ul>
+            <li><a href="https://coolberg.in/">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Know Our Story</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>It's not just a Beer <br>It's <span>Coolberg</span></h2>
+            <p> India's Leading brand of Non Alcoholic Beer
+                with 0.0% Alcohol, 100% Crafted Taste. Whether you like the taste of beer or not, Coolberg will not disappoint you. <br>Grab a Coolberg and enjoy with your friends and family. </p>
+            <a href="https://coolberg.in/collections/coolberg-shop" target="_self">Learn More</a>
+        </div>
+   
+    <div class="imgBox">
+      <img src="jpeg images/coolberg_black1.png" alt="" class="coolberg" >
+    </div>
+</div>
+</div>
+<ul class="thumb">
+   
+    <li><img src="jpeg images/coolberg_black1.png" alt=""  onclick="imgSlider('jpeg images/coolberg_black1.png');changeCircle('#0d0d0d')"></li>
+    <li><img src="jpeg images/coolberg_yellow3.png" alt=""  onclick="imgSlider('jpeg images/coolberg_yellow3.png');changeCircle('#daa520')"></li>
+    <li><img src="jpeg images/coolberg_pink5.png" alt="" onclick="imgSlider('jpeg images/coolberg_pink5.png');changeCircle('#e73280')"></li>
+    <li><img src="jpeg images/coolberg_red4.png" alt="" onclick="imgSlider('jpeg images/coolberg_red4.png');changeCircle('#e48a23')"></li>
+    <li><img src="jpeg images/coolberg2_green_2.png" alt="" onclick="imgSlider('jpeg images/coolberg2_green_2.png');changeCircle('#a4e93d')"></li>
+</ul>
+<ul class="socials">
+    <li><a href="#"><img src="jpeg images/facebook.png" alt=""></a></li>
+    <li><a href="#"><img src="jpeg images/instagram.png" alt=""></a></li>
+    <li><a href="#"><img src="jpeg images/twitter.png" alt=""></a></li>
+</ul>
+   </section>
+   
+   <script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.coolberg').src = anything;
+    }
+  
+   function changeCircle(color){
+    const circle = document.querySelector('.circle');
+    circle.style.background = color;
+   }
+   </script>
+    
+</body>
+</html>
